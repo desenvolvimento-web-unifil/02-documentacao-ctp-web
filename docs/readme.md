@@ -8,7 +8,7 @@ erDiagram
     USER ||--|{ CARTEIRA :POSSUI
     CARTEIRA ||--|{ DEPOSITAR : PODE
     CARTEIRA ||--|{ SACAR : PODE
-    APOSTA ||..|{ JOGOS : EXTENDS
+    APOSTA ||..|{ JOGOS : CONTEM
     USER ||--|{ SUPORTE : ACESSA
     USER ||--|{ PERFIL : POSSUI
     SUPORTE||--|{ FAQ : CONTEM
