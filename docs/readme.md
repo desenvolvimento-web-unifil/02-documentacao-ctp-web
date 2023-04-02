@@ -1,6 +1,5 @@
 Atalho abrir markdown ctrl + k e apos solta e aperta V
 
-Diagrama de Caso de Uso
 
 ```mermaid
 erDiagram
