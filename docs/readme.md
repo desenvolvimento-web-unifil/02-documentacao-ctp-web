@@ -1,6 +1,5 @@
 Atalho abrir markdown ctrl + k e apos solta e aperta V
 
-
 ```mermaid
 erDiagram
 
@@ -12,6 +11,6 @@ erDiagram
     USER ||--|{ SUPORTE : ACESSA
     USER ||--|{ PERFIL : POSSUI
     SUPORTE||--|{ FAQ : CONTEM
-    SUPORTE||--|{ CONTATO : COTEM
+    SUPORTE||--|{ CONTATO : CONTEM
 
 ```
