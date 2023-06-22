@@ -21,6 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [HomeController::class, 'index']);
+Route::get('/login', [LoginController::class, 'index']);
 
 
 
