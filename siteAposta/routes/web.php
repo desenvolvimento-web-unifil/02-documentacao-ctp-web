@@ -4,9 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\ApostaController;
-
-use App\Http\Middleware\Autenticador;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,17 +17,11 @@ use App\Http\Middleware\Autenticador;
 */
 
 Route::get('/', function () {
-    return view('home.index');
+    return view('welcome');
 });
 
 Route::get('/home', [HomeController::class, 'index']);
-
-Route::get('/login', [LoginController::class, 'index'])->name("login");
-Route::post('/login', [LoginController::class, 'login'])->name("signIn");
-Route::get('/register', [UsersController::class, 'create'])->name('usersCreate');
-
-Route::get('/aposta', [ApostaController::class, 'index'])->middleware(\App\Http\Middleware\Autenticador::class);
-
+Route::get('/login', [LoginController::class, 'index']);
 Route::get('/register', [RegisterController::class, 'index']);
 
 
