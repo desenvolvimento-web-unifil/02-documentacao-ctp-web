@@ -47,8 +47,9 @@ body {
     text-align: center;
   }
 
-  .container .user{
+  .container .email{
     margin-bottom: 20px;
+    width: 40px,
   }
 
   .container .senha{

@@ -13,9 +13,9 @@
   <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
 </head>
 <body>
-  <div class="container">
+<div class="container">
     <h2>TTL</h2>
-    <h3>Bem Vindo</h3>
+    <h3>Registrar-se</h3>
     <h4>Top Team League</h4>
     <form>
       <input class="user" type="text" placeholder="Usuário" required>
