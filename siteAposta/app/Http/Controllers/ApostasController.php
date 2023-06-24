@@ -1,0 +1,12 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class ApostasController extends Controller
+{
+    public function index() {
+        return view('apostas.index');
+    }
+}
