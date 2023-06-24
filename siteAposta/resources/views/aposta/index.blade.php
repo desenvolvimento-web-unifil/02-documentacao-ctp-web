@@ -2,25 +2,25 @@
 
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-<script src="scripts.js"></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="{{ asset('js/scripts.js') }}"></script>
 
-  <title>Bet</title>
+
+  <title>Apostas</title>
 </head>
 <body>
   <header>
       <div class="logo">
-        <a href="home.html">
-          <img src="Grupo 9601.pngg" alt="logo">
+        <a href="/home">
+          <img src="{{asset('img/logo.png')}}" alt="logo">
         </a>
       </div>
-      
-    
+
     <div class="search">
       <input type="text" placeholder="Buscar por jogos">
       <button>
@@ -36,45 +36,41 @@
       <a>Depositar</a>
       <div class="menu">
         <div class="alinhador">
-          <p>Ferreira Viadinho</p>
+          <p>Nome Usuario</p>
           <p>R$500,00</p>
           <button onclick="openDepositDialog()">Depositar</button>
         </div>
-       
+
       </div>
     </div>
-    <button style="margin-left: 50px"> <a href="/destroy" >sair</a></button>
-
   </header>
 
   <aside>
     <ul>
-      <li class="active">
-        <img src="logoo.jpg" >
+      <li class="active" onclick="showSelectedInfo('all')">
+        <img src="{{asset('img/control.png')}}">
         <a href="#"></a>
       </li>
-      <li>
-        <img src="" >
+      <li class="active" onclick="showSelectedInfo('game1')">
+        <img src="{{asset('img/logoo.jpg')}}">
         <a href="#"></a>
       </li>
-      <li>
-        <img src="" >
+      <li class="active" onclick="showSelectedInfo('game2')">
+        <img src="{{asset('img/valorant.png')}}">
         <a href="#"></a>
       </li>
-      <li>
-        <img src="" >
+      <li class="active" onclick="showSelectedInfo('game3')">
+        <img src="{{asset('img/cs.png')}}">
         <a href="#"></a>
       </li>
-      <li>
-        <img src="" >
-        <a href="#"></a>
-      </li>
+      <!-- Restante dos itens do menu lateral -->
     </ul>
   </aside>
+
   <div class="content">.
-    <div class="titulo"></div> 
+    <div class="titulo"></div>
       <div class="subtitulo"> Escolhas picantes
-      <img src="logoo.jpg"  >
+      <img src="{{asset('img/fire.png')}}"  >
 
       </div>
       <form id="form">
@@ -87,7 +83,7 @@
           </select>
         </div>
       </form>
-      
+
       <div id="selectedInfo" class="selected-info"></div>
     </div>
 
@@ -97,9 +93,9 @@
         <button onclick="placeBet()">Apostar</button >
       </div>
     </div>
-  
 
-    
+
+
   </div>
 </body>
 </html>
