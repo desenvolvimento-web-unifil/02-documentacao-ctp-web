@@ -1,3 +1,28 @@
+function updateOdds() {
+    var oddsElements = document.querySelectorAll(".team-odds span");
+
+    oddsElements.forEach(function (oddsElement) {
+        var odds = parseFloat(oddsElement.textContent);
+        var random = Math.random();
+
+        if (random < 0.5) {
+            odds -= 0.1;
+        } else {
+            odds += 0.1;
+        }
+
+        if (odds < 0.1) {
+            odds = 0.1;
+        }
+
+        oddsElement.textContent = odds.toFixed(2);
+    });
+}
+
+function updateAllOdds() {
+    updateOdds();
+}
+
 function showSelectedInfo(game) {
     var selectedInfo = document.getElementById("selectedInfo");
     selectedInfo.innerHTML = "";
