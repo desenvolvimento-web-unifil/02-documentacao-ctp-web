@@ -19,7 +19,7 @@
           <img src="{{asset('img/Grupo 9601.png')}}" alt="logo">
         </a>
       </div>
-
+    
     <!-- <div class="search">
       <input type="text" placeholder="Buscar por jogos">
       <button>
@@ -27,11 +27,9 @@
       </button type="submit">
     </div> -->
     <div class="login">
-        <a href="/aposta">aposta</a>
-      </div>
-
+      <a href="{{route('aposta.index')}}">APOSTAR</a>
+    </div>
     @guest
-
     <div class="login">
       <a href="/login">LOGIN</a>
     </div>
@@ -39,8 +37,8 @@
     <div class="login">
         <a href="/register">REGISTRAR</a>
       </div>
-
-      @endguest
+    @endguest  
+      
   </header>
 
   <section class="intro">
@@ -85,7 +83,7 @@
   <p>© 2023 TTL - Top Team League</p>
   <p>Criado em 2023</p>
 </footer>
-
+  
   </div>
 </body>
 </html>

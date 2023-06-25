@@ -23,7 +23,7 @@
       @csrf
       
       @if ($errors->any())
-    <div class="alert alert-danger">
+    <div class="error">
         <ul>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
