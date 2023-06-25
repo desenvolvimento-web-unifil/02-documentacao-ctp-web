@@ -5,7 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ApostaController;
-
+use App\Http\Controllers\DepositController;
 use App\Http\Middleware\Autenticador;
 
 /*
@@ -36,6 +36,9 @@ Route::get('/aposta', [ApostaController::class, 'index'])->name('aposta.index')-
 //REGISTRO
 Route::get('/register', [RegisterController::class, 'create'])->name('register.create');
 Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
+
+Route::post('/atualizar-saldo', [DepositController::class, 'updateBalance'])->name('atualizar.saldo');
+
 
 
 
