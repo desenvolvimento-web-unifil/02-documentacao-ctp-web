@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="{{ asset('js/deposit.js') }}"></script>
     <script src="{{ asset('js/scripts.js') }}"></script>
+    <script src="{{ asset('js/betting.js') }}"></script>
 
 
   <title>Apostas</title>
@@ -32,17 +34,17 @@
     </div>
 
     <div class="user-info" data-username="Nome do Usuário">
-      R$500,00
-      <a>Depositar</a>
-      <div class="menu">
-        <div class="alinhador">
-          <p>Nome Usuario</p>
-          <p>R$500,00</p>
-          <button onclick="openDepositDialog()">Depositar</button>
+        <p id="walletBalance">R$0,00</p>
+        <a>Depositar</a>
+        <div class="menu">
+          <div class="alinhador">
+            <p>Nome Usuario</p>
+            <p id="walletBalanceMobile">R$0,00</p>
+            <button onclick="increaseDeposit()">Depositar</button>
+          </div>
         </div>
-
       </div>
-    </div>
+
   </header>
 
   <aside>
@@ -56,11 +58,11 @@
         <a href="#"></a>
       </li>
       <li class="active" onclick="showSelectedInfo('game2')">
-        <img src="{{asset('img/valorant.png')}}">
+        <img src="{{asset('img/cs.png')}}">
         <a href="#"></a>
       </li>
       <li class="active" onclick="showSelectedInfo('game3')">
-        <img src="{{asset('img/cs.png')}}">
+        <img src="{{asset('img/valorant.png')}}">
         <a href="#"></a>
       </li>
       <!-- Restante dos itens do menu lateral -->
@@ -90,7 +92,7 @@
     <div class="popup-overlay" id="popupOverlay">
       <div class="popup-container">
         <input type="number" placeholder="Digite o valor da aposta" id="betValue" required>
-        <button onclick="placeBet()">Apostar</button >
+        <button onclick="placeBet()">Apostar</button>
       </div>
     </div>
 
