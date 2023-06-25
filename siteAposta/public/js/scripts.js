@@ -441,3 +441,15 @@ function showSelectedInfo(game) {
 
     setInterval(updateOdds, 10000); // Atualiza as odds a cada 10 segundos
 }
+
+function openPopup(team, odds) {
+    var popupOverlay = document.getElementById("popupOverlay");
+    var popupContainer = document.querySelector(".popup-container");
+
+    popupContainer.innerHTML = `
+        <input type="number" placeholder="Digite o valor da aposta" id="betValue" required>
+        <button onclick="placeBet()">Apostar</button>
+    `;
+
+    popupOverlay.style.display = "block";
+}
