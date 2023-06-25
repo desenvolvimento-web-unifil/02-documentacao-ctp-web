@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\RegisterRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -13,14 +14,17 @@ class RegisterController extends Controller
         return view('register.index');
     }
 
-    public function store(Request $request)
+    public function store(RegisterRequest $request)
     {
-        $request->validate([
-            'name' => ['required'],
-            'email' => ['required'],
-            'password' => ['required']
-        ]);
 
+/*        
+        $request->validate([
+            'name' => ['required', 'min:5'],
+            'email' => ['required', 'min:5'],
+            'password' => ['required','min:5']
+        ]); */
+
+        dd($request);
 
         $data = $request->except('_token');
        
