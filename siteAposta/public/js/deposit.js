@@ -1,3 +1,5 @@
+
+
 function increaseDeposit() {
     var depositValue = prompt("Digite o valor para aumentar o depósito:");
 
@@ -23,4 +25,26 @@ function increaseDeposit() {
         walletElementMobile.textContent =
             "R$" + newBalance.toFixed(2).replace(".", ",");
     }
+
+    updateBalanceDatabase(newBalance);
+}
+
+function updateBalanceDatabase(newBalance)
+{
+
+    axios.post('/atualizar-saldo', {
+        newBalance: newBalance
+      })
+      .then(function (response) {
+        // Sucesso na requisição
+        var saldoAtualizado = response.data.saldo;
+        
+        // Atualizar a exibição do saldo no frontend
+        document.getElementById("walletBalance").textContent = saldoAtualizado;
+        
+      })
+      .catch(function (error) {
+        // Tratamento de erro
+        console.log(error);
+      });
 }
