@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="{{ asset('js/deposit.js') }}"></script>
     <script src="{{ asset('js/scripts.js') }}"></script>
     <script src="{{ asset('js/betting.js') }}"></script>
@@ -30,19 +31,23 @@
       </button type="submit">
     </div>
     <div class="login">
-      <a href="login.html">LOGIN</a>
+      <a href="/login">LOGIN</a>
     </div>
 
     <div class="user-info" data-username="Nome do Usuário">
-        <p id="walletBalance">R$0,00</p>
+        <p id="walletBalance">{{ $money }}</p>
         <a>Depositar</a>
         <div class="menu">
           <div class="alinhador">
             <p>Nome Usuario</p>
-            <p id="walletBalanceMobile">R$0,00</p>
+            <p id="walletBalanceMobile">{{ $money }}</p>
             <button onclick="increaseDeposit()">Depositar</button>
           </div>
         </div>
+      </div>
+
+      <div class="login">
+        <a href="/destroy">Logout</a>
       </div>
 
   </header>
