@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <script src="scripts.js"></script>
 
-  <title>Home</title>
+  <title>Home Page</title>
 </head>
 <body>
   <header>
@@ -27,15 +27,15 @@
       </button type="submit">
     </div> -->
     <div class="login">
-      <a href="{{route('aposta.index')}}">APOSTAR</a>
+      <a href="{{route('aposta.index')}}">APOSTA</a>
     </div>
     @guest
     <div class="login">
-      <a href="/login">LOGIN</a>
+      <a href="/login">ENTRAR</a>
     </div>
 
     <div class="login">
-        <a href="/register">REGISTRAR</a>
+        <a href="/register">CADASTRO</a>
       </div>
     @endguest  
       
@@ -43,10 +43,10 @@
 
   <section class="intro">
     <div class="intro-text">
-      <h1>Bem-vindo à TTL – Top Team League!</h1>
-      <p>Experimente a emoção das apostas em E-sports e ponha à prova as suas capacidades!</p>
-      <h2>Você vai se juntar às fileiras de apostadores de elite, ou você vai assistir de fora?</h2>
-      <p>Não espere, registe-se ou deposite agora e alimente a sua fogueira de apostas!</p>
+      <h1>Bem-vindo ao TTL – Top Team League!</h1>
+      <p>Experimente a emoção das apostas em E-sports e ponha à prova as suas habilidades!</p>
+      <h2>Você vai se juntar aos apostadores de elite, ou você vai assistir de fora?</h2>
+      <p>Não perca tempo, registe-se e deposite agora e alimente a sua conta de apostas!</p>
     </div>
     <div class="intro-image">
       <img src="{{asset('img/exemplo.jpg')}}" alt="Imagem de destaque" style="width: 600px; ">
@@ -58,8 +58,8 @@
         <img src="{{asset('img/exemplo.jpg')}}" alt="Imagem de destaque" style="width: 500px; ">
     </div>
     <div class="feature-text">
-      <h2>Descubra oportunidades de apostas incomparáveis</h2>
-      <p>Nunca foi tão emocionante apostar! Com E-sports, a cada partida é uma nova oportunidade de vitória. Aproveite a empolgação e faça suas apostas com confiança!</p>
+      <h2>Encontre oportunidades de apostas incomparáveis</h2>
+      <p>Nunca foi tão bom apostar! Com E-sports, a cada partida é uma nova oportunidade de vitória. Aproveite o momento e faça suas apostas de confiança!</p>
     </div>
   </section>
 
