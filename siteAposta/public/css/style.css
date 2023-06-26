@@ -1,0 +1,523 @@
+body {
+    background-color: #112540;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 550px;
+    height: 700px;
+    border-radius: 30px;
+    box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.09);
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .container h2 {
+    font-family: Orbitron;
+  font-size: 39px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  color: #e95310;
+    text-align: center;
+  }
+  .container h3{
+    letter-spacing: 6.4px;
+    font-family: Montserrat;
+    font-weight: 300;
+
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    color: #414446;
+    text-align: center;
+  }
+  .container h4{
+    letter-spacing: normal;
+    font-family: Montserrat;
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  color: #112540;
+    text-align: center;
+  }
+
+  .container .email .name{
+    margin-bottom: 20px;
+    width: 40px,
+  }
+
+  .container .senha{
+  margin-bottom: 50px;
+}
+
+  .container input[type="text"],
+  .container input[type="password"] {
+    border: hidden;
+    width: auto;
+    padding: 22px 350px 22px 22px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    color: #414446;
+  }
+  .container button {
+    font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  color: #fff;
+    padding: 22px 219px 20px 220px;
+  border-radius: 20px;
+  background-color: #e95310;
+    width: 100%;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+
+  /* HOME */
+
+  header {
+    z-index: 2;
+    position: relative;
+    padding: 37px 101px 36px 82px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+    background-image: linear-gradient(to right, #e95310 10%, #d63d16 95%);
+
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    width: 90px;
+  height: 47px;
+    flex-grow: 1;
+  }
+ .logo img {
+  width: 90px;
+  height: 47px;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+  }
+  .search input[type="text"] {
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+  }
+  .search button {
+    font-family: Montserrat;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+  .login a {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* HOME MENU */
+
+  aside {
+    background-color: #fff;
+    color: #fff;
+    width: 240px;
+    position: fixed;
+    top: 62px;
+    left: 0;
+    height: 100vh;
+    padding-top: 40px;
+    z-index: 1;
+  }
+  ul {
+    text-align: center;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  li:hover {
+
+    background-color: #777;
+  }
+  li.active {
+
+    background-color: #4CAF50;
+  }
+  li img {
+    width: 51.2px;
+    height: 37.1px;
+    padding: 42.5px 30.6px 29.5px 96px;
+
+  }
+  li a {
+
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* HOME CONTEÚDO */
+  .content {
+    margin-left: 260px;
+    padding: 20px;
+
+  }
+
+  .content .titulo{
+    padding: 40px 0;
+    font-family: Orbitron;
+    font-size: 36px;
+ 
+    color: #fff;
+  }
+
+  
+  .content .subtitulo{
+  font-family: Orbitron;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  }
+ .subtitulo img{
+    width: 20px;
+  height: 25px;
+  }
+
+
+form{
+  margin-top: 50px;
+}
+label {
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+ 
+}
+select {
+  width: 100%;
+  padding: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #555;
+  font-size: 16px;
+  font-weight: bold;
+}
+select::-ms-expand {
+  display: none;
+}
+.selected-info {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+  color: #fff;
+}
+.teams-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 5px;
+}
+a{
+  text-decoration: none;
+}
+.team {
+  cursor: pointer;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-basis: 48%;
+}
+
+.team.active {
+
+  background-color: #4CAF50;
+}
+.team-name {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+  color: #112540;
+  margin-bottom: 10px;
+}
+.team-odds {
+  color: #112540;
+  font-size: 14px;
+}
+
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.popup-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.popup-container button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+/* CARTEIRA */
+
+.alinhador{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px 0;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 15px;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  position: relative;
+}
+
+.user-info a{
+  font-family: Montserrat;
+  font-size: 15px;
+  color: #fff;
+}
+
+
+
+.menu button{
+  cursor: pointer;
+  padding: 20px 32px 19px 30.8px;
+  border: solid 1px #acafb2;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user-info .menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 400px;
+  height: 200px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.user-info .menu p{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  color: #112540;
+}
+
+.user-info:hover .menu {
+  display: block;
+}
+
+
+
+.intro {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  background-color: #112540;
+  color: #fff;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-image {
+  flex: 1;
+  text-align: center;
+}
+
+.intro h1 {
+  font-family: Orbitron;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.intro h2 {
+  font-family: Orbitron;
+  font-weight: 600;
+  font-size: 28px;
+  
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  background-color: #f1f1f1;
+}
+
+.feature-image {
+  flex: 1;
+  text-align: center;
+}
+
+.feature-text {
+  flex: 1;
+}
+
+.feature h2 {
+  font-size: 24px;
+  font-family: Orbitron;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.join-league {
+  font-family: Orbitron;
+  font-weight: 600;
+  text-align: center;
+  padding: 40px;
+  background-color: #112540;
+  color: #fff;
+}
+
+.join-league h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.join-league p {
+  font-family: Montserrat;
+  font-weight: 300;
+
+
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.register-button {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-family: Orbitron;
+  font-weight: 600;
+  color: #666;
+  font-size: 14px;
+}
