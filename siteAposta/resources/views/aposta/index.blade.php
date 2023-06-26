@@ -14,7 +14,7 @@
     <script src="{{ asset('js/betting.js') }}"></script>
 
 
-  <title>Apostas</title>
+  <title>Aba Apostas</title>
 </head>
 <body>
   <header>
@@ -27,27 +27,27 @@
     <div class="search">
       <input type="text" placeholder="Buscar por jogos">
       <button>
-        BUSCAR
+        ENCONTRAR
       </button type="submit">
     </div>
     <div class="login">
-      <a href="/login">LOGIN</a>
+      <a href="/login">ENTRAR</a>
     </div>
 
     <div class="user-info" data-username="Nome do Usuário">
         <p id="walletBalance">{{ $money }}</p>
-        <a>Depositar</a>
+        <a>Deposite</a>
         <div class="menu">
           <div class="alinhador">
-            <p>Nome Usuario</p>
+            <p>Nome do Usuário</p>
             <p id="walletBalanceMobile">{{ $money }}</p>
-            <button onclick="increaseDeposit()">Depositar</button>
+            <button onclick="increaseDeposit()">Deposite</button>
           </div>
         </div>
       </div>
 
       <div class="login">
-        <a href="/destroy">Logout</a>
+        <a href="/destroy">Sair</a>
       </div>
 
   </header>
@@ -76,15 +76,15 @@
 
   <div class="content">.
     <div class="titulo"></div>
-      <div class="subtitulo"> Escolhas picantes
+      <div class="subtitulo"> Escolhas arriscadas
       <img src="{{asset('img/fire.png')}}"  >
 
       </div>
       <form id="form">
-        <label for="campeonato">Escolha um Jogo</label>
+        <label for="campeonato">Selecione um Jogo</label>
         <div class="select-wrapper">
           <select id="campeonato" onchange="showSelectedInfo()">
-            <option value="">Selecione um Jogo</option>
+            <option value="">Mudar Jogo</option>
             <option value="League Of Legends">League Of Legends</option>
             <option value="Valorant">Valorant</option>
           </select>
@@ -97,7 +97,7 @@
     <div class="popup-overlay" id="popupOverlay">
       <div class="popup-container">
         <input type="number" placeholder="Digite o valor da aposta" id="betValue" required>
-        <button onclick="placeBet()">Apostar</button>
+        <button onclick="placeBet()">Clique para Apostar</button>
       </div>
     </div>
 
