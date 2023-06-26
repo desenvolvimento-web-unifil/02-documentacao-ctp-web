@@ -9,14 +9,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <title>Tela de Registro</title>
+  <title>local de Cadastro</title>
   <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
 
 </head>
 <body>
 <div class="container">
     <h2>TTL</h2>
-    <h3>Registrar-se</h3>
+    <h3>Cadastrar-se</h3>
     <h4>Top Team League</h4>
     <form id="form-registro" action="{{ route('register.store') }}" method="POST">
       @csrf
